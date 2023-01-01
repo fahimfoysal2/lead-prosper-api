@@ -7,7 +7,7 @@ export class AuthController {
 
   @Post('login')
   login() {
-    return this.authService.login();
+    return this.authService.login('test@mail.com', 'password');
   }
 
   @Post('register')
